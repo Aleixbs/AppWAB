@@ -1,0 +1,128 @@
+.jimu-widget-WABTest{
+    width: 100%;
+    height:100%;
+    font-family: 'Avenir Light', Verdana, Geneva, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y:auto; 
+    overflow-x: auto;
+}
+
+.jimu-widget-WABTest #selectProvincia{
+    width:70%;
+    display:block;
+    box-sizing:content-box;
+    padding:6px 24px 6px 12px;
+    font-size: 14px;
+    line-height: 20px; 
+    float: left; 
+    height: 20px; 
+    color: #4c4c4c; 
+    border: 1px solid #57585A; 
+    /* border-right: 0;  */
+    border-radius: 4px 4px 4px 4px; 
+    transition: width .175s ease-in; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.jimu-widget-WABTest #selectConcello{
+    width:70%;
+    display:block;
+    box-sizing:content-box;
+    padding:6px 24px 6px 12px;
+    font-size: 14px;
+    line-height: 20px; 
+    float: left; 
+    height: 20px; 
+    color: #4c4c4c; 
+    border: 1px solid #57585A; 
+    border-right: 0; 
+    border-radius: 4px 0 0 4px; 
+    transition: width .175s ease-in; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.jimu-widget-WABTest #selectParroquia{
+    width:70%;
+    display:block;
+    box-sizing:content-box;
+    padding:6px 24px 6px 12px;
+    font-size: 14px;
+    line-height: 20px; 
+    float: left; 
+    height: 20px; 
+    color: #4c4c4c; 
+    border: 1px solid #57585A; 
+    border-right: 0; 
+    border-radius: 4px 0 0 4px; 
+    transition: width .175s ease-in; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.jimu-widget-WABTest #btn-div{
+    /* width:100%; 
+    box-sizing:border-box; 
+    height:35px;
+    padding:5px; */
+    display: block;
+    float: left;
+    padding: 6px 12px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    white-space: nowrap;
+    /* vertical-align: middle; */
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #57585A;
+    -webkit-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+    background-color: #fff;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.jimu-widget-WABTest .btn-div{
+    /* width:100%; 
+    box-sizing:border-box; 
+    height:35px;
+    padding:5px; */
+    display: block;
+    float: left;
+    padding: 6px 12px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    white-space: nowrap;
+    /* vertical-align: middle; */
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #57585A;
+    -webkit-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+    background-color: #fff;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
