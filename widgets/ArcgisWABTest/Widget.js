@@ -40,7 +40,8 @@ define([
           const divConcellos = dom.byId('concellos')
           divConcellos.style.display = "none";
         };
-        if (valorSelectConcello == 15){
+
+        if (valorSelectConcello != -1){
           const queryTask = new QueryTask(this.config.concellosService); 
           
           const query = new Query(); 
@@ -66,85 +67,6 @@ define([
 
           }))
         }
-        if (valorSelectConcello == 27){
-          const queryTask = new QueryTask(this.config.concellosService); 
-          
-          const query = new Query(); 
-          query.outFields = ["CODCONC", "CONCELLO"]; 
-          query.where = `CODPROV = ${valorSelectConcello}`
-
-          queryTask.execute(query, lang.hitch(this, function(results){
-            console.log('resultadosQuery: ', results)
-            opt = document.createElement("option"); 
-            opt.value = '-1'; 
-            opt.innerHTML = "Selecciona un concello"; 
-            this.listaConcellos.add(opt); 
-
-            for (var i = 0; i < results.features.length; i++) {
-              opt = document.createElement("option"); 
-              opt.value = results.features[i].attributes.CODCONC;
-              opt.innerHTML = results.features[i].attributes.CONCELLO;
-              this.listaConcellos.add(opt);
-            }
-
-            const divConcellos = dom.byId('concellos')
-            divConcellos.style.display = "block";
-
-          }))
-        }
-        if (valorSelectConcello == 32){
-          const queryTask = new QueryTask(this.config.concellosService); 
-          
-          const query = new Query(); 
-          query.outFields = ["CODCONC", "CONCELLO"]; 
-          query.where = `CODPROV = ${valorSelectConcello}`
-
-          queryTask.execute(query, lang.hitch(this, function(results){
-            console.log('resultadosQuery: ', results)
-            opt = document.createElement("option"); 
-            opt.value = '-1'; 
-            opt.innerHTML = "Selecciona un concello"; 
-            this.listaConcellos.add(opt); 
-
-            for (var i = 0; i < results.features.length; i++) {
-              opt = document.createElement("option"); 
-              opt.value = results.features[i].attributes.CODCONC;
-              opt.innerHTML = results.features[i].attributes.CONCELLO;
-              this.listaConcellos.add(opt);
-            }
-
-            const divConcellos = dom.byId('concellos')
-            divConcellos.style.display = "block";
-
-          }))
-        }
-        if (valorSelectConcello == 36){
-          const queryTask = new QueryTask(this.config.concellosService); 
-          
-          const query = new Query(); 
-          query.outFields = ["CODCONC", "CONCELLO"]; 
-          query.where = `CODPROV = ${valorSelectConcello}`
-
-          queryTask.execute(query, lang.hitch(this, function(results){
-            console.log('resultadosQuery: ', results)
-            let opt = document.createElement("option"); 
-            opt.value = '-1'; 
-            opt.innerHTML = "Selecciona un concello"; 
-            this.listaConcellos.add(opt); 
-
-            for (var i = 0; i < results.features.length; i++) {
-              let opt = document.createElement("option"); 
-              opt.value = results.features[i].attributes.CODCONC;
-              opt.innerHTML = results.features[i].attributes.CONCELLO;
-              this.listaConcellos.add(opt);
-            }
-
-            const divConcellos = dom.byId('concellos')
-            divConcellos.style.display = "block";
-
-          }))
-        }
-        
 
         this.listaConcellos.innerHTML =""; //esto borra todas las opciones y la capacidad de poder seleccionar otra vez...
         
